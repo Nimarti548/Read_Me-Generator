@@ -38,6 +38,7 @@ function init() {
     inquirer.prompt(questions)
     .then((data) => {
         console.log(data)
+        writeToFile("NewReadme.md", markDown({ ...data }));
     })
 }
 
