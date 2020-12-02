@@ -21,9 +21,10 @@ const questions = [
     name: "email",
   },
   {
-    type: "input",
-    message: "What kind if license should you project have?",
-    name: "license",
+    type: 'list',
+    name: 'license',
+    message: 'Which type of license does your project have?',
+    choices: ['MIT', 'Mozilla', 'Apache', 'GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Boost Software ', 'The Unlicense'],
   },
   {
     type: "input",

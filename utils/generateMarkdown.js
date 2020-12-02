@@ -1,7 +1,7 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
 return `# ${data.title}
-![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
+![GitHub license](https://img.shields.io/badge/license-${data.license}-blue.svg)
 
 ## Description
 ${data.description}
@@ -24,9 +24,9 @@ ${data.description}
 ## Installation
 To install necessary dependencies, run the following command :
 
-
+\`\`\`
 ${data.installation}
-
+\`\`\`
 
 ## Usage
 ${data.usage}
@@ -38,7 +38,11 @@ This project is licensed under the ${data.license} license.
 ${data.contributing}
 
 ## Test
+To test application run the following command:
+
+\`\`\`
 ${data.test} 
+\`\`\`
 
 ## Questions
 If you have any questions about the repository, please contact me directly at ${data.email}. You can find more of my work at [${data.github}](https://github.com/${data.github}/).
